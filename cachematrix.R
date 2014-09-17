@@ -2,10 +2,10 @@
 
 ## The first function, makeChache Matrix creates a special "Matrix"
 ## It is a list containing a function to:
-##1.set the value of the Matrix
-##2.get the value of the Matrix
-##3.set the value of the mean
-##4.get the value of the mean
+        ##1.set the value of the Matrix
+        ##2.get the value of the Matrix
+        ##3.set the value of the mean
+        ##4.get the value of the mean
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -25,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Function cacheSolve: This function computes the inverse of the special "matrix" returned by makeCacheMatrix above.
-## If the inverse has already becen calculated (and the matrix has not changed), 
+## If the inverse has already been calculated (and the matrix has not changed), 
 ## then the cachesolve should retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
@@ -38,7 +38,7 @@ cacheSolve <- function(x, ...) {
         }
         data <- x$get()
         m_x <- solve(data, ...)
-        x$setinverse_m_x(m)
-        m
+        x$setinverse_m_x(m_x)
+        m_x
         
 }
